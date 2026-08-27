@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-free-code"
+version = "0.8.0"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.116,<1",
+    "uvicorn[standard]>=0.35,<1",
+    "httpx>=0.28,<1",
+    "python-dotenv>=1.1,<2",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<9", "pytest-asyncio>=1,<2"]
+
+[project.scripts]
+my-free-code = "my_free_code:main"
+mfc-claude = "my_free_code.cli.claude:main"
+mfc-client = "my_free_code.cli.mfc:main"
