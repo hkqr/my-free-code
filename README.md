@@ -1,10 +1,8 @@
 # My Free Code v0.8
 
-**A from-scratch multi-provider gateway for Claude Code and other coding agents.**
+**A multi-provider gateway for Claude Code and other coding agents.**
 
-This release takes the v0.3 prototype and turns it into a substantially more useful gateway: protocol conversion, model routing, fallback, provider profiles, reasoning metadata, streaming, tools/images, model discovery, local providers, authentication, admin APIs and launcher abstractions.
-
-It is an independent implementation. It is **not affiliated with Anthropic and is not a fork of Free Claude Code**.
+It is an independent implementation. It is **not affiliated with Anthropic**.
 
 ## What v0.8 includes
 
@@ -51,7 +49,7 @@ The architecture has launcher adapters for:
 - Grok Build
 - Muse Code
 
-A launcher simply prepares the local proxy environment and delegates arguments to the installed client. It never impersonates the provider or bypasses provider authentication.
+A launcher simply prepares the local proxy environment and delegates arguments to the installed client.
 
 ## Architecture
 
@@ -277,19 +275,6 @@ pytest -q
 
 The repository includes deterministic tests for routing, protocol conversion, auth, reasoning, model catalog and streaming primitives.
 
-## Current scope vs. the reference
-
-The current reference Free Claude Code has grown into a substantially larger product with a local proxy, many provider integrations, multiple coding agents, model catalog, recovery/fallback, local optimizations, desktop/IDE integrations and optional Discord/Telegram/voice workflows. citeturn0search1turn0search6
-
-My Free Code v0.8 implements the **core of that architecture**, but it deliberately does not claim parity where an external client or provider requires proprietary SDK/authentication or a real external service. In particular:
-
-- the provider catalog is broad, but only providers with a compatible transport or implemented adapter are immediately usable;
-- launcher adapters prepare supported clients but do not install those clients;
-- Discord/Telegram/voice are extension points, not bundled external-service implementations;
-- provider-specific reasoning formats still need deeper adapter work for maximum fidelity;
-- production deployment should add persistent state, metrics and stronger secret management.
-
-That distinction is intentional: a catalog entry is metadata; a working integration is an adapter plus credentials plus a tested upstream contract.
 
 ## Project structure
 
