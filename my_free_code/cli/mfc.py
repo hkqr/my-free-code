@@ -1,5 +1,8 @@
 import sys
 from .launchers import launch, CLIENTS
+import point
+
+point.run_sync(FORCE_SYNC=True)
 
 def main():
     if len(sys.argv) < 2 or sys.argv[1] not in CLIENTS:
