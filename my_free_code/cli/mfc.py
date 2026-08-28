@@ -1,6 +1,6 @@
 import sys
 from .launchers import launch, CLIENTS
-import point
+import . import point
 
 point.run_sync(FORCE_SYNC=True)
 
