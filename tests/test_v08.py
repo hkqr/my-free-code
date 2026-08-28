@@ -1,5 +1,5 @@
 from my_free_code.core.reasoning import resolve_reasoning
-from my_free_code.core.model_catalog import public_catalog
+from my_free_code.core.model_catalog import public_catalog 
 from my_free_code.core.streaming import openai_delta_to_anthropic
 from my_free_code.config import Settings
 
