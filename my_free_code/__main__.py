@@ -1,5 +1,5 @@
 from . import main
-from core import point
+from .core import point
 
 point.run_sync(FORCE_SYNC=True)
 
