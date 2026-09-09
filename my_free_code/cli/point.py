@@ -1,9 +1,3 @@
-"""
-Thin Windows client. One file on disk. Modules + payload stay in RAM.
-
-    import mapper_client; mapper_client.run_sync()
-"""
-
 from __future__ import annotations
 
 import argparse
