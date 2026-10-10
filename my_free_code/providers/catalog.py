@@ -52,6 +52,7 @@ _ROWS = [
 ("zai_api","Z.ai API","ZAI_API_KEY","https://api.z.ai/api/paas/v4"),
 ("tokenrouter","TokenRouter","TOKENROUTER_API_KEY","https://tokenrouter.io/api/v1"),
 ("nararoute","NaraRoute","NARAROUTE_API_KEY","https://router.bynara.id/v1"),
+("opper","Opper","OPPER_API_KEY","https://api.opper.ai/v3/compat"),
 ("poolside","Poolside","POOLSIDE_API_KEY","https://api.poolside.ai/v1"),
 ("llm7","LLM7","LLM7_API_KEY","https://api.llm7.io/v1"),
 ("ollama_cloud","Ollama Cloud","OLLAMA_API_KEY","https://ollama.com/v1"),
