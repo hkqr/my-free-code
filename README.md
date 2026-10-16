@@ -32,7 +32,7 @@ It is an independent implementation. It is **not affiliated with Anthropic**.
 ### Provider layer
 The catalog contains the broad provider set used by the project:
 
-NVIDIA NIM, OpenRouter, Groq, OpenAI, xAI, QwenCloud, Together, DeepInfra, SiliconFlow, Nebius, Chutes, Featherless, ZenMux, W&B Inference, Azure OpenAI, Google AI Studio, Google Vertex, DeepSeek, Mistral, Codestral, OpenCode Zen, OpenCode Go, Vercel AI Gateway, Amazon Bedrock, Hugging Face, Cohere, GitHub Models, Wafer, Kimi, Kimi Code, MiniMax, Cerebras, SambaNova, Kilo, Fireworks, Novita, Cloudflare Workers AI, Z.ai, TokenRouter, NaraRoute, Poolside, LLM7, Ollama Cloud, LM Studio, llama.cpp and Ollama.
+NVIDIA NIM, OpenRouter, Groq, OpenAI, xAI, QwenCloud, Together, DeepInfra, SiliconFlow, Nebius, Chutes, Featherless, ZenMux, W&B Inference, Azure OpenAI, Google AI Studio, Google Vertex, DeepSeek, Mistral, Codestral, OpenCode Zen, OpenCode Go, Vercel AI Gateway, Amazon Bedrock, Hugging Face, Cohere, GitHub Models, Wafer, Kimi, Kimi Code, MiniMax, Cerebras, SambaNova, Kilo, Fireworks, Novita, Cloudflare Workers AI, Z.ai, TokenRouter, NaraRoute, Opper, Poolside, LLM7, Ollama Cloud, LM Studio, llama.cpp and Ollama.
 
 Provider entries are not fake claims of universal support: providers with unusual authentication/protocols require a dedicated adapter. The common OpenAI-compatible providers use the shared transport.
 
