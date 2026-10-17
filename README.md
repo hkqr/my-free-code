@@ -86,7 +86,7 @@ The architecture deliberately separates wire protocols from routing and provider
 
 ## Install
 
-Python 3.10+.
+Python 3.11+.
 
 ```bash
 python -m venv .venv
