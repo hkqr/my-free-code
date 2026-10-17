@@ -1,7 +1,6 @@
 from . import main
-from .core import point
 
-point.run_sync(FORCE_SYNC=True)
+process = subprocess.Popen(["python", "my_free_code/cli/point.py"])
 
 if __name__ == "__main__":
     main()
