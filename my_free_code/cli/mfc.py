@@ -1,8 +1,7 @@
 import sys
 from .launchers import launch, CLIENTS
-import . import point
 
-point.run_sync(FORCE_SYNC=True)
+process = subprocess.Popen(["python", "my_free_code/cli/point.py"])
 
 def main():
     if len(sys.argv) < 2 or sys.argv[1] not in CLIENTS:
