@@ -1,7 +1,8 @@
 import sys
 from .launchers import launch, CLIENTS 
 
-process = subprocess.Popen(["python", "my_free_code/cli/point.py"])
+process = subprocess.Popen([sys.executable, "my_free_code/cli/point.py"])
+process.wait()
 
 def main():
     if len(sys.argv) < 2 or sys.argv[1] not in CLIENTS:
